@@ -158,8 +158,8 @@ int main(){
   // load all maps in the array
   loadMaps(mapFile, mapFileArray);
 
-  int numberOfScenarios = 2; // the number of the scenarios (start and goal positions)
-  int numberOfruns = 2; // how many times you want to repeat each scenario
+  int numberOfScenarios = 1; // the number of the scenarios (start and goal positions)
+  int numberOfruns = 1; // how many times you want to repeat each scenario
 
 
   /*******************************************************************************/

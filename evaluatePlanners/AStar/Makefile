@@ -2,7 +2,7 @@ CC=g++
 CFLAGS=-W -Wall
 LDFLAGS=-lrt
 
-DIR_OBJ= ../../../path_planners/lib/
+DIR_OBJ= ../../../ipath/lib/
 BINDIR = bin
 
 SRC =  evaluateASTAR.cpp\
