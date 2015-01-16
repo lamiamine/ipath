@@ -18,7 +18,7 @@ iPath simulator implements the following planners:
 
 
 II- Directories:
-- path_planners which contains:
+- ipath which contains:
 	+ ACO: A class that implements the ACO algorithm
 	+ AStar: A class that implements the A* algorithm 
 	+ evaluatePlanners
@@ -31,36 +31,36 @@ II- Directories:
 	+ tabu_search: A class that implements the tabu search 
 
 
-III- path_planners compilation and execution:
+III- iPath compilation and execution:
 
 -To compile and run Astar planner:
-1- In path_planners directory run the command
+1- In ipath directory run the command
 $ make
 
-2- Open file "evaluateASTAR.cpp" from path_planners/evaluatePlanners/AStar directory, specify following parameters:
+2- Open file "evaluateASTAR.cpp" from ipath/evaluatePlanners/AStar directory, specify following parameters:
 
 int numberOfScenarios = 2; // the number of the scenarios (start and goal positions)
 int numberOfruns = 10; // how many times you want to repeat each scenario
 // Astar parameters
 bool withBreakTies = true;
 
-3- run this command from path_planners/evaluatePlanners/AStar directory
+3- run this command from ipath/evaluatePlanners/AStar directory
 $ make
 
-4- Open file "mapFile" from path_planners/evaluatePlanners/AStar/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
+4- Open file "mapFile" from ipath/evaluatePlanners/AStar/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
 map-W30-H30/W30-H30-ObRatio0.3-ObSize5-Nbr01.pgm
 map-W50-H50/W50-H50-ObRatio0.1-ObSize1-Nbr01.pgm
 
-5- run this command from path_planners/evaluatePlanners/AStar/bin directory
+5- run this command from ipath/evaluatePlanners/AStar/bin directory
 $ ./main
 
-6- Get the results from "AStarStatistics.xlsx" from path_planners/evaluatePlanners/AStar/bin directory
+6- Get the results from "AStarStatistics.xlsx" from ipath/evaluatePlanners/AStar/bin directory
 
 -To compile and run Relaxed Astar planner:
-1- In path_planners directory run the command
+1- In ipath directory run the command
 $ make
 
-2- Open file "evaluateRASTAR.cpp" from path_planners/evaluatePlanners/RAstar directory, specify following parameters:
+2- Open file "evaluateRASTAR.cpp" from ipath/evaluatePlanners/RAstar directory, specify following parameters:
 
 int numberOfScenarios = 2; // the number of the scenarios (start and goal positions)
 int numberOfruns = 10; // how many times you want to repeat each scenario
@@ -68,24 +68,24 @@ int numberOfruns = 10; // how many times you want to repeat each scenario
 int numberOfNeighbors = 8; // 4 or 8
 bool withBreakTies = true;
 
-3- run this command from path_planners/evaluatePlanners/RAstar directory
+3- run this command from ipath/evaluatePlanners/RAstar directory
 $ make
 
-4- Open file "mapFile" from path_planners/evaluatePlanners/RAstar/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
+4- Open file "mapFile" from ipath/evaluatePlanners/RAstar/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
 map-W30-H30/W30-H30-ObRatio0.3-ObSize5-Nbr01.pgm
 map-W50-H50/W50-H50-ObRatio0.1-ObSize1-Nbr01.pgm
 
-5- run this command from path_planners/evaluatePlanners/RAstar/bin directory
+5- run this command from ipath/evaluatePlanners/RAstar/bin directory
 $ ./main
 
-6- Get the results from "RAStatistics.xlsx" from path_planners/evaluatePlanners/AStar/bin directory
+6- Get the results from "RAStatistics.xlsx" from ipath/evaluatePlanners/AStar/bin directory
 
 
 -To compile and run Genetic Algorithm planner:
-1- In path_planners directory run the command
+1- In ipath directory run the command
 $ make
 
-2- Open file "evaluateGA.cpp" from path_planners/evaluatePlanners/genetic_algorithm directory, specify following parameters:
+2- Open file "evaluateGA.cpp" from ipath/evaluatePlanners/genetic_algorithm directory, specify following parameters:
 
 int numberOfScenarios = 2; // the number of the scenarios (start and goal positions)
 int numberOfruns = 10; // how many times you want to repeat each scenario
@@ -99,23 +99,23 @@ int mutationIterationNumber = 50;
 float minInitialPathCost = 0;
 int radius = 2;
 
-3- run this command from path_planners/evaluatePlanners/genetic_algorithm directory
+3- run this command from ipath/evaluatePlanners/genetic_algorithm directory
 $ make
 
-4- Open file "mapFile" from path_planners/evaluatePlanners/genetic_algorithm/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
+4- Open file "mapFile" from ipath/evaluatePlanners/genetic_algorithm/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
 map-W30-H30/W30-H30-ObRatio0.3-ObSize5-Nbr01.pgm
 map-W50-H50/W50-H50-ObRatio0.1-ObSize1-Nbr01.pgm
 
-5- run this command from path_planners/evaluatePlanners/genetic_algorithm/bin directory
+5- run this command from ipath/evaluatePlanners/genetic_algorithm/bin directory
 $ ./main
 
-6- Get the results from "GAStatistics.xlsx" from path_planners/evaluatePlanners/genetic_algorithm/bin directory
+6- Get the results from "GAStatistics.xlsx" from ipath/evaluatePlanners/genetic_algorithm/bin directory
 
 -To compile and run Tabu Search planner:
-1- In path_planners directory run the command
+1- In ipath directory run the command
 $ make
 
-2- Open file "evaluateTABU.cpp" from path_planners/evaluatePlanners/tabu_search directory, specify following parameters:
+2- Open file "evaluateTABU.cpp" from ipath/evaluatePlanners/tabu_search directory, specify following parameters:
 
 int numberOfScenarios = 2; // the number of the scenarios (start and goal positions)
 int numberOfruns = 10; // how many times you want to repeat each scenario
@@ -123,36 +123,35 @@ int numberOfruns = 10; // how many times you want to repeat each scenario
 int tenure=7;
 int numberOfIterations = 30;
 
-3- run this command from path_planners/evaluatePlanners/tabu_search directory
+3- run this command from ipath/evaluatePlanners/tabu_search directory
 $ make
 
-4- Open file "mapFile" from path_planners/evaluatePlanners/tabu_search/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
+4- Open file "mapFile" from ipath/evaluatePlanners/tabu_search/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
 map-W30-H30/W30-H30-ObRatio0.3-ObSize5-Nbr01.pgm
 map-W50-H50/W50-H50-ObRatio0.1-ObSize1-Nbr01.pgm
 
-5- run this command from path_planners/evaluatePlanners/tabu_search/bin directory
+5- run this command from ipath/evaluatePlanners/tabu_search/bin directory
 $ ./main
 
-6- Get the results from "TabuSearchStatistics.xlsx" from path_planners/evaluatePlanners/tabu_search/bin directory
+6- Get the results from "TabuSearchStatistics.xlsx" from ipath/evaluatePlanners/tabu_search/bin directory
 
 -To compile and run all the planners:
 
-1- Open file "main.cpp" from path_planners directory, specify following parameters:
+1- Open file "main.cpp" from ipath directory, specify following parameters:
 
 int numberOfScenarios = 2; // the number of the scenarios (start and goal positions)
 int numberOfruns = 10; // how many times you want to repeat each scenario
 
 And specify each planner parameters.
 
-2- In path_planners directory run the command
+2- In ipath directory run the command
 $ make
 
-3- Open file "mapFile" from path_planners/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
+3- Open file "mapFile" from ipath/bin directory. Add the map(s) you want to test, separate the maps by enter. For example:
 map-W30-H30/W30-H30-ObRatio0.3-ObSize5-Nbr01.pgm
 map-W50-H50/W50-H50-ObRatio0.1-ObSize1-Nbr01.pgm
 
-4- run this command from path_planners/bin directory
+4- run this command from ipath/bin directory
 $ ./main
 
-5- Get the results from the "xlsx" files from path_planners/bin directory
-
+5- Get the results from the "xlsx" files from ipath/bin directory
